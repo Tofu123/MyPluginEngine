@@ -55,7 +55,10 @@ namespace VisualMenuBar
                     itemDef.ID = "VisualMenuBar.SymbolizationByLayerPropPageCmd";
                     itemDef.Group = false;
                     break;
-                    
+                case 9:
+                    itemDef.ID = "VisualMenuBar.fm_RasterRenderClassificationCmd";
+                    itemDef.Group = true;
+                    break;    
                 default:
                     break;
 
@@ -64,7 +67,7 @@ namespace VisualMenuBar
 
         public long ItemCount
         {
-            get { return 9; }
+            get { return 10; }
         }
 
         public string Name

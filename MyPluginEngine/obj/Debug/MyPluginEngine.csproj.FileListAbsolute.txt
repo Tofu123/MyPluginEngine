@@ -31,3 +31,10 @@ C:\Users\lk\Desktop\MyPluginEngine_lizy0906\MyPluginEngine\MyPluginEngine\bin\De
 C:\Users\lk\Desktop\MyPluginEngine_lizy0906\MyPluginEngine\MyPluginEngine\obj\Debug\MyPluginEngine.csprojResolveAssemblyReference.cache
 C:\Users\lk\Desktop\MyPluginEngine_lizy0906\MyPluginEngine\MyPluginEngine\obj\Debug\MyPluginEngine.dll
 C:\Users\lk\Desktop\MyPluginEngine_lizy0906\MyPluginEngine\MyPluginEngine\obj\Debug\MyPluginEngine.pdb
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\bin\Debug\MyPluginEngine.dll.config
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\bin\Debug\MyPluginEngine.dll
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\bin\Debug\MyPluginEngine.pdb
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\bin\Debug\log4net.dll
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\obj\Debug\MyPluginEngine.csprojResolveAssemblyReference.cache
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\obj\Debug\MyPluginEngine.dll
+D:\77211356\GitHub\MyPluginEngine\MyPluginEngine\obj\Debug\MyPluginEngine.pdb

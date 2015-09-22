@@ -48,6 +48,10 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -103,12 +107,23 @@
     <Compile Include="ColorRampForm.Designer.cs">
       <DependentUpon>ColorRampForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ColorStyle.cs" />
+    <Compile Include="ComboBoxSym.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DotDensitySymbols.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DotDensitySymbols.Designer.cs">
       <DependentUpon>DotDensitySymbols.cs</DependentUpon>
     </Compile>
+    <Compile Include="fm_RasterRenderClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_RasterRenderClassification.designer.cs">
+      <DependentUpon>fm_RasterRenderClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_RasterRenderClassificationCmd.cs" />
     <Compile Include="GraduatedColorSymbols.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +142,7 @@
     <Compile Include="ProportionalSymbols.Designer.cs">
       <DependentUpon>ProportionalSymbols.cs</DependentUpon>
     </Compile>
+    <Compile Include="RasterRender.cs" />
     <Compile Include="SelectSymbolByControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,8 +206,14 @@
     <EmbeddedResource Include="ColorRampForm.resx">
       <DependentUpon>ColorRampForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ComboBoxSym.resx">
+      <DependentUpon>ComboBoxSym.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DotDensitySymbols.resx">
       <DependentUpon>DotDensitySymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_RasterRenderClassification.resx">
+      <DependentUpon>fm_RasterRenderClassification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GetSymbolByControl.resx">
       <DependentUpon>GetSymbolByControl.cs</DependentUpon>
