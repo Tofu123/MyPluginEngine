@@ -6,13 +6,13 @@ using System.Text;
 
 namespace DatabaseManageBar
 {
-    public class fm_CreateDatabaseTableDisposeCmd : MyPluginEngine.ICommand
+    public class DataBaseConnectCmd : MyPluginEngine.ICommand
     {
         private System.Drawing.Bitmap m_hBitmap;
 
-        public fm_CreateDatabaseTableDisposeCmd()
+        public DataBaseConnectCmd()
         {
-            string str = @"..\Data\Image\DatabaseManageBar\CreateTableAfterDesign.png";
+            string str = @"..\Data\Image\DatabaseManageBar\DBConnect.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else
@@ -28,12 +28,12 @@ namespace DatabaseManageBar
 
         public string Caption
         {
-            get { return "导入数据库设计"; }
+            get { return "连接数据库"; }
         }
 
         public string Category
         {
-            get { return "导入数据"; }
+            get { return "数据库管理"; }
         }
 
         public bool Checked
@@ -58,22 +58,22 @@ namespace DatabaseManageBar
 
         public string Message
         {
-            get { return "导入数据库设计"; }
+            get { return "连接数据库"; }
         }
 
         public string Name
         {
-            get { return "fm_CreateDatabaseTableDisposeCmd"; }
+            get { return "DataBaseConnectCmd"; }
         }
         public string Tooltip
         {
-            get { return "fm_CreateDatabaseTableDisposeCmd"; }
+            get { return "DataBaseConnectCmd"; }
         }
 
         public void OnClick()
         {
-            fm_CreateDatabaseTableDispose CreateDatabaseTableDispose = new fm_CreateDatabaseTableDispose();
-            CreateDatabaseTableDispose.Show();
+            DataBaseConnect pDataBaseConnect = new DataBaseConnect();
+            pDataBaseConnect.Show();
         }
 
         public void OnCreate(MyPluginEngine.IApplication hook)

@@ -12,7 +12,7 @@ namespace DatabaseManageBar
 
         public fm_CreateDatabaseTableCmd()
         {
-            string str = @"..\Data\Image\DatabaseManageBar\CreateTable.png";
+            string str = @"..\Data\Image\DatabaseManageBar\CreateTableFromExcel.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else
@@ -28,7 +28,7 @@ namespace DatabaseManageBar
 
         public string Caption
         {
-            get { return "数据库新建表"; }
+            get { return "直接导表建库"; }
         }
 
         public string Category
@@ -58,7 +58,7 @@ namespace DatabaseManageBar
 
         public string Message
         {
-            get { return "数据库新建表"; }
+            get { return "直接导表建库"; }
         }
 
         public string Name

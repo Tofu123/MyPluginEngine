@@ -11,7 +11,10 @@ namespace DatabaseManageBar
 {
     class SqlOperation
     {
-        static string strConne = @"Data Source=LIZY-THINK\MSSQLSERVER2012;Database=HeiHeDSS;User ID=sa;PWD=cropwatch";//连接数据库字符串
+        //static string strConne = @"Data Source=LIZY\MSSQLEXPRESS;Database=HeiHeDSS;User ID=sa;PWD=saa";//连接数据库字符串
+        static string strConne = DataConnectManager.return_ConnectString();
+
+
         #region  建立数据库连接
         /// <summary>
         /// 建立数据库连接.
@@ -99,85 +102,7 @@ namespace DatabaseManageBar
         }
         #endregion
 
-        //#region  创建表格
-        ///// <summary>
-        ///// 创建表格
-        ///// </summary>
-        ///// <param name="strConne">数据库连接字符串</param>
-        ///// <param name="strSql">数据库执行语句</param>
-        //public static void CreateTable(string strConne, string strSql)
-        //{
-        //    bool isException = SqlCom(strConne, strSql);
-        //    if (!isException)
-        //    {
-        //        MessageBox.Show("表格创建成功!", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    }
-        //}
-        //#endregion
-
-        //#region  删除表格
-        ///// <summary>
-        ///// 删除表格
-        ///// </summary>
-        ///// <param name="strConne">数据库连接字符串</param>
-        ///// <param name="strSql">数据库执行语句</param>
-        //public static void DeleteTable(string strConne, string strSql)
-        //{
-        //    bool isException = SqlCom(strConne, strSql);
-        //    if (!isException)
-        //    {
-        //        MessageBox.Show("表格删除成功!", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    }
-        //}
-        //#endregion
-
-        //#region  向表中添加行
-        ///// <summary>
-        ///// 向表中添加行
-        ///// </summary>
-        ///// <param name="strConne">数据库连接字符串</param>
-        ///// <param name="strSql">数据库执行语句</param>
-        //public static void InsertIntoTable(string strConne, string strSql)
-        //{
-        //    bool isException = SqlCom(strConne, strSql);
-        //    if (!isException)
-        //    {
-        //        MessageBox.Show("数据添加成功!", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    }
-        //}
-        //#endregion
-
-        //#region  在表中删除某行数据
-        ///// <summary>
-        ///// 在表中删除某行数据
-        ///// </summary>
-        ///// <param name="strConne">数据库连接字符串</param>
-        ///// <param name="strSql">数据库执行语句</param>
-        //public static void deleteRow(string strConne, string strSql)
-        //{
-        //    bool isException = SqlCom(strConne, strSql);
-        //    if (!isException)
-        //    {
-        //        MessageBox.Show("数据删除成功!", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    }
-        //}
-        //#endregion
-
-        //#region  更新数据库
-        ///// <summary>
-        ///// 更新数据库
-        ///// </summary>
-        ///// <param name="strConne">数据库连接字符串</param>
-        ///// <param name="strSql">数据库执行语句</param>
-        //public static void UpdateDB(string strConne, string strSql)
-        //{
-        //    bool isException = SqlCom(strConne, strSql);
-        //    if (!isException)
-        //    {
-        //        MessageBox.Show("数据更新成功!", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    }
-        //}
-        //#endregion
+       
 
         /// <summary>
         /// 查询一个表所又的字段名

@@ -12,7 +12,7 @@ namespace DatabaseManageBar
 
         public fm_InsertDataAndTemplateCmd()
         {
-            string str = @"..\Data\Image\DatabaseManageBar\InsertData.png";
+            string str = @"..\Data\Image\DatabaseManageBar\DataAndTemplate.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else

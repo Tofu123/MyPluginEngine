@@ -52,7 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChineseIntoLetter.cs" />
+    <Compile Include="App_Code\ChineseIntoLetter.cs" />
+    <Compile Include="App_Code\DataBaseOperate.cs" />
+    <Compile Include="App_Code\DataConnectManager.cs" />
+    <Compile Include="DataBaseConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseConnect.designer.cs">
+      <DependentUpon>DataBaseConnect.cs</DependentUpon>
+    </Compile>
     <Compile Include="fm_CreateDatabaseTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,13 +94,17 @@
       <DependentUpon>fm_InsertDic.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlOperation.cs" />
+    <Compile Include="App_Code\SqlOperation.cs" />
     <Compile Include="fm_CreateDatabaseTableDisposeCmd.cs" />
     <Compile Include="fm_InsertDataAndTemplateCmd.cs" />
     <Compile Include="fm_CreateTableToWordCmd.cs" />
     <Compile Include="fm_InsertDicCmd.cs" />
+    <Compile Include="DataBaseConnectCmd.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DataBaseConnect.resx">
+      <DependentUpon>DataBaseConnect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fm_CreateDatabaseTable.resx">
       <DependentUpon>fm_CreateDatabaseTable.cs</DependentUpon>
     </EmbeddedResource>
