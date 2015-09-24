@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMenuBar", "VisualMenu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartographicMenuBar", "CartographicMenuBar\CartographicMenuBar.csproj", "{D127489A-D634-4B02-BE23-CF4A8394857D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseManageBar", "DatabaseManageBar\DatabaseManageBar.csproj", "{57587990-60B4-43D0-88BD-FC73F48A3881}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +31,6 @@ Global
 		{D127489A-D634-4B02-BE23-CF4A8394857D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D127489A-D634-4B02-BE23-CF4A8394857D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D127489A-D634-4B02-BE23-CF4A8394857D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{57587990-60B4-43D0-88BD-FC73F48A3881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57587990-60B4-43D0-88BD-FC73F48A3881}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57587990-60B4-43D0-88BD-FC73F48A3881}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57587990-60B4-43D0-88BD-FC73F48A3881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
