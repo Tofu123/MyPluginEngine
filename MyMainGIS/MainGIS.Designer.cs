@@ -46,6 +46,7 @@
             this.pageTab = new System.Windows.Forms.TabPage();
             this.axPageLayoutControl1 = new ESRI.ArcGIS.Controls.AxPageLayoutControl();
             this.MainTool = new DevComponents.DotNetBar.ItemPanel();
+            this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.dotNetBarManager1 = new DevComponents.DotNetBar.DotNetBarManager(this.components);
             this.dockSite4 = new DevComponents.DotNetBar.DockSite();
             this.dockSite1 = new DevComponents.DotNetBar.DockSite();
@@ -70,6 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
             this.pageTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axPageLayoutControl1)).BeginInit();
+            this.MainTool.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -293,6 +296,7 @@
             this.MainTool.BackgroundStyle.BorderTopWidth = 1;
             this.MainTool.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.MainTool.ContainerControlProcessDialogKey = true;
+            this.MainTool.Controls.Add(this.axToolbarControl1);
             this.MainTool.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainTool.DragDropSupport = true;
             this.MainTool.Location = new System.Drawing.Point(0, 0);
@@ -301,6 +305,15 @@
             this.MainTool.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.MainTool.TabIndex = 0;
             this.MainTool.Text = "itemPanel1";
+            // 
+            // axToolbarControl1
+            // 
+            this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axToolbarControl1.Location = new System.Drawing.Point(0, 0);
+            this.axToolbarControl1.Name = "axToolbarControl1";
+            this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
+            this.axToolbarControl1.Size = new System.Drawing.Size(855, 28);
+            this.axToolbarControl1.TabIndex = 0;
             // 
             // dotNetBarManager1
             // 
@@ -438,7 +451,7 @@
             this.Controls.Add(this.dockSite8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainGIS";
-            this.Text = "GisEnginePlus";
+            this.Text = "GIS系统框架";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainGIS_Load);
             this.panelEx1.ResumeLayout(false);
@@ -454,6 +467,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();
             this.pageTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axPageLayoutControl1)).EndInit();
+            this.MainTool.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,6 +503,7 @@
         private DevComponents.DotNetBar.StyleManager styleManager1;
         public ESRI.ArcGIS.Controls.AxMapControl axMapControl1;
         private DevComponents.DotNetBar.QatCustomizeItem qatCustomizeItem1;
+        private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl1;
     }
 }
 

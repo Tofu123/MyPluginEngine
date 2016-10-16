@@ -90,7 +90,7 @@ namespace MyMainGIS
 
             //在同步时同时设置好与TOCControl和ToolBarControl的buddy
             m_controlsSynchronizer.AddFrameWorkControl(axTOCControl1.Object);
-            // m_controlsSynchronizer.AddFrameWorkControl(axToolbarControl1.Object);
+            m_controlsSynchronizer.AddFrameWorkControl(axToolbarControl1.Object);
 
             m_controlsSynchronizer.BindControls(true);
 
